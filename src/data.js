@@ -5,4 +5,21 @@ const example = () => {
   return 'example';
 };
 
-window.example = example;
+const filter = () => {
+  return "filter";
+};
+
+const order = () => {
+  return "order";
+};
+
+const statistics = () => {
+  return "statistics";
+};
+
+window.example = {
+  example,
+  filter,
+  order,
+  statistics,
+};

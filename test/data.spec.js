@@ -24,7 +24,7 @@ describe('order', () => {
   it('is a function', () => {
     expect(typeof example.order).toBe("function");
   });
-  it('returns `filter`', () => {
+  it('returns `order`', () => {
     expect(example.order()).toBe("order");
   });
 });
@@ -33,7 +33,7 @@ describe('statistics', () => {
   it('is a function', () => {
     expect(typeof example.statistics).toBe("function");
   });
-  it('returns `filter`', () => {
+  it('returns `statistics`', () => {
     expect(example.statistics()).toBe("statistics");
   });
 });
