@@ -63,7 +63,7 @@ Estos son datos que te proponemos:
   este [link](https://developer.riotgames.com/api-methods/).
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
 
 Como entregable final tendrás una página web que permita **visualizar la data,
@@ -344,7 +344,7 @@ pueden ayudar:
 Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
+   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu
    tus \_coaches\* te compartirán un \_link\* a un repo y te darán acceso de lectura
    en ese repo. La otra integrante del equipo deber hacer un fork **del
    repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
@@ -419,3 +419,63 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Consume data de forma dinámica (`fetch()`).
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
+
+
+# Data Lovers
+
+La meta de este proyecto es crear una página web que permita **visualizar data, filtrarla, ordenarla y hacer algún cálculo agregado**.
+
+Lo primero que hicimos para nuestro proyecto fue leer el "Readme" con los requerimientos del mismo. Elegimos un tema para la data, en nuestro caso fue Pokémon ya que de todas las opciones era la que nos era un poco más familiar.
+
+Definimos cual iba a ser nuestro usuario e hicimos una pequeña y corta encuesta (a familiares y conocidos principalmente) para conocer un poco qué le gustaría encontrar en la página, y qué cosas podría resolver.
+
+Una vez hecho esto lo resumimos en 4 historias de usuario principales y dibujamos un prototipo de baja fidelidad, pedimos feedback a nuestras compañeras y futuros usuarios e hicimos algunas modificaciones, todo esto en lápiz y papel.
+
+((![Prototipbaja1](https://github.com/karlaalvarezlaboratoria/GDL003-data-lovers/origin/master/prototipobaja1.jpg)
+))
+
+Realizamos un prototipo de alta fidelidad en figma para poder visualizar como quedaría y funcionaría nuestra página
+
+https://www.figma.com/files/project/2956228/DataLovers
+
+[prototipoalta1)(http:file:///home/laboratoria-185/Documentos/LaboratoriaKEAC/GDL003-data-lovers/prototipoalta1.png)
+
+
+(Agregar imagenes y link de prototipo de alta fidelidad)
+
+Una vez hecho esto comenzamos a crear los test que nos indicarían que nuestra página está funcionando correctamente.
+
+
+## Definición de usuario
+
+El usuario es una persona de 15 a 40 años que juega por primera vez pokemonGo o que empieza a seguir la serie y que desea información sobre los pokemons que va recolectando o conociendo.
+
+
+## Historias de usuarios
+- [ ] **Historia de usuario 1:**
+El usuario requiere filtrar a sus pokemones por su "tipo" y que se desplieguen con su imagen y sus datos más importantes.
+
+**Definition of done:**
+- La interfaz tiene botones por "tipo de pokemon".
+- Los botones filtran los pokémon deseados con su data e imagen
+- Que la interfaz muestre el listado de pokémons con su data e imagen
+- Que pase las pruebas Unitarias
+- Que el diseño sera responsivo.
+- Que la pagina donde se muestra el pokémon tenga un botón de regreso a la página de inicio.
+
+- [ ] **Historia de usuario 2:**
+El usuario requiere un boton que ordene su listado de pokemons por id de forma ascendente  y descendente.
+
+**Definition of done**
+- La interfaz tiene botón que ordena sus datos de forma ascendente o descendente por id.
+- La interfaz muestre el listado de pokémons ordenados por id
+- Que pase las pruebas Unitarias
+- Que el diseño sera responsivo.
+
+
+[_Modificar las historias de usuario y los dofd
+- [] **Historia de usuario 1:**
+El usuario requiere filtrar a sus pokemones por su "tipo" y que se desplieguen con su imagen y sus datos más importantes.
+
+- [] **Historia de usuario 1:**
+El usuario requiere filtrar a sus pokemones por su "tipo" y que se desplieguen con su imagen y sus datos más importantes._]
