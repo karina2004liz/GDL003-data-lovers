@@ -410,7 +410,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [ ] UI: Muestra lista y/o tab la con datos y/o indicadores.
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [ ] UI: Permite filtrar data en base a una condición.
 
