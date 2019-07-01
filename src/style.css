@@ -1,3 +1,8 @@
+#wpw{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body{
 
   background-image: url(https://img.wallpapersafari.com/tablet/2560/1700/63/3/pxPkc6.jpg);
@@ -29,10 +34,13 @@ h4{
 
 #container-result{
 
-display: inline-table;
-aling-items: center;
-justify-content: center
-
+width: 960px;
+display:inline-block;
+text-align:center;
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
 }
 
 #divcon{
