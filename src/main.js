@@ -26,14 +26,15 @@ showAll.addEventListener("click",() => {
 let show = showAll.value;
 
 
-let waterDataSelect = POKEMON.pokemon.forEach(fire => {
+let allPokemons = POKEMON.pokemon.forEach( showPokemon => {
 
 contenedor.innerHTML +=
 
 `<div id= "divcon">
-<img id= "imgcon" src="${fire.img}" >
-<h1> ${fire.name}</h1>
-<h4> ${fire.num} </h4>
+<img id= "imgcon" src="${showPokemon.img}" >
+<h1> ${showPokemon.name}</h1>
+<h5> ${showPokemon.type}</h5>
+<h4> ${showPokemon.num} </h4>
 </div>`;
 });
 //console.log(waterDataSelect);

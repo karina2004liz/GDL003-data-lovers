@@ -1,6 +1,10 @@
 #wpw{
-  margin-left: auto;
-  margin-right: auto;
+    vertical-align:middle;
+}
+
+#inicio{
+
+text-align:center;
 }
 
 body{
@@ -13,9 +17,20 @@ body{
 
 }
 
-#water,#fire, #grass,#bug,#fly,#poison,#rock,#normal,#electric,#ground, #fight,#psy,#ice,#ghost,#dragon{
+.myButtons{
+  width: 60px;
+  height: 60px;
+
+}
+
+.myButtons:hover{
   width: 80px;
   height: 80px;
+}
+
+#firstPage{
+align-content: center;
+text-align: center;
 
 }
 
@@ -29,6 +44,12 @@ h1,p,h2{
 h4{
   text-align: left;
   color: white;
+}
+
+h5{
+text-align: left;
+color: white;
+
 }
 
 
