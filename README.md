@@ -410,7 +410,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [ ] UI: Muestra lista y/o tab la con datos y/o indicadores.
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 - [ ] UI: Permite filtrar data en base a una condición.
 
@@ -421,7 +421,12 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Cobertura de coverage al 100%.
 
 
-# Data Lovers
+
+# **Data Lovers**
+
+# **Welcome to Pokemon World!!!**
+
+![pokemon](https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5b0fcfa25bafe83df2c203b3/pokemon0_0.jpg)
 
 La meta de este proyecto es crear una página web que permita **visualizar data, filtrarla, ordenarla y hacer algún cálculo agregado**.
 
@@ -431,20 +436,24 @@ Definimos cual iba a ser nuestro usuario e hicimos una pequeña y corta encuesta
 
 Una vez hecho esto lo resumimos en 4 historias de usuario principales y dibujamos un prototipo de baja fidelidad, pedimos feedback a nuestras compañeras y futuros usuarios e hicimos algunas modificaciones, todo esto en lápiz y papel.
 
-((![Prototipbaja1](https://github.com/karlaalvarezlaboratoria/GDL003-data-lovers/origin/master/prototipobaja1.jpg)
-))
+![prototipoBajaFidelidad](https://i.ibb.co/Y4SmWxz/Whats-App-Image-2019-06-21-at-8-58-23-PM.jpg)
 
-Realizamos un prototipo de alta fidelidad en figma para poder visualizar como quedaría y funcionaría nuestra página
+
+
+Realizamos un prototipo de alta fidelidad en Figma para poder visualizar como quedaría y funcionaría nuestra página
 
 https://www.figma.com/files/project/2956228/DataLovers
 
-[prototipoalta1)(http:file:///home/laboratoria-185/Documentos/LaboratoriaKEAC/GDL003-data-lovers/prototipoalta1.png)
+![prototipoalta1](https://i.ibb.co/Vxw4FZS/prototipoalta1.png)
 
 
-(Agregar imagenes y link de prototipo de alta fidelidad)
+Una vez hecho esto comenzamos a crear los test que nos indicarían que nuestra página está funcionando correctamente, un test para la función de filtrado, uno para el ordenado, y uno para el de estadísticas.
 
-Una vez hecho esto comenzamos a crear los test que nos indicarían que nuestra página está funcionando correctamente.
+Lo siguiente fue explorar y probar con funciones para que nuestra página filtrara por tipo de pokemon, y posteriormente mostrara la información ordenada en la interfaz...  Continuará...
 
+## Definición del producto
+
+Buscador Pokemon es una página dónde puedes encontrar de forma sencilla y rápida información e imagen acerca de un pokemon... Continuará...
 
 ## Definición de usuario
 
@@ -479,3 +488,9 @@ El usuario requiere filtrar a sus pokemones por su "tipo" y que se desplieguen c
 
 - [] **Historia de usuario 1:**
 El usuario requiere filtrar a sus pokemones por su "tipo" y que se desplieguen con su imagen y sus datos más importantes._]
+
+<p align="center">
+
+![gif](https://media2.giphy.com/media/10LKovKon8DENq/giphy.gif)
+
+</p>
