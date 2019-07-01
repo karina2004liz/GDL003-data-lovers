@@ -30,7 +30,7 @@ let allPokemons = POKEMON.pokemon.forEach( showPokemon => {
 
 contenedor.innerHTML +=
 
-`<div id= "divcon">
+` <div id= "divcon">
 <img id= "imgcon" src="${showPokemon.img}" >
 <h1> ${showPokemon.name}</h1>
 <h5> ${showPokemon.type}</h5>
