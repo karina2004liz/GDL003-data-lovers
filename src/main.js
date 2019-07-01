@@ -22,6 +22,7 @@ console.log(allOfThem);
 
 
 showAll.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let show = showAll.value;
 
@@ -45,35 +46,11 @@ contenedor.innerHTML +=
 //data-toggle="modal" data-target="#${fire.id}"> ${fire.id}</button>
 
 
-typefire.addEventListener("click",() => {
-
+typefire.addEventListener("click",()=>{
+  contenedor.innerHTML= "";
 let fire = typefire.value;
-let firstp = POKEMON.pokemon.filter(fires => {return fires.type.includes("Fire")});
+let firstp = POKEMON.pokemon.filter(fire =>{return fire.type.includes ("Fire")});
 
-
-alert("Seleccionaste tipo fuego");
-
-let waterDataSelect = firstp.forEach(fire => {
-
-  contenedor.innerHTML +=
-
-  `<div id= "divcon">
-  <img id= "imgcon" src="${fire.img}" >
-  <h1> ${fire.name}</h1>
-  <h4> ${fire.num} </h4>
-  </div>`;
-  });
-
-});
-
-typewhater.addEventListener("click",()=>{
-let wather = typewhater.value;
-let firstp = POKEMON.pokemon.filter(water =>{return water.type.includes ("Water")});
-//let secondstring = JSON.stringify(second);
-
-
-alert("Seleccionaste tipo agua");
-//document.getElementById("printfilter").innerHTML = "These are water type pokemon" + secondstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
   contenedor.innerHTML +=
@@ -84,342 +61,305 @@ let pokemonDataSelect = firstp.forEach(print => {
   <h4> ${print.num} </h4>
   </div>`;
   });
+});
 
+//let secondstring = JSON.stringify(second);
 
+//document.getElementById("printfilter").innerHTML = "These are water type pokemon" + secondstring;
+
+typewhater.addEventListener("click",()=>{
+  contenedor.innerHTML= "";
+let wather = typewhater.value;
+let firstp = POKEMON.pokemon.filter(water =>{return water.type.includes ("Water")});
+
+let pokemonDataSelect = firstp.forEach(print => {
+
+  contenedor.innerHTML +=
+
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 
 typegrass.addEventListener("click",()=>{
+  contenedor.innerHTML= "";
 let grass = typegrass.value;
 let firstp = POKEMON.pokemon.filter(grass =>{return grass.type.includes ("Grass")});
-//let secondstring = JSON.stringify(second);
 
-alert("Seleccionaste tipo hierva");
-//document.getElementById("printfilter").innerHTML = "These are Grass type pokemon" + secondstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
+  contenedor.innerHTML +=
+
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
+});
+
+  //let pokemonImage = document.createElement("IMG");
+  //pokemonImage.setAttribute("src", print.img);
 //  pokemonImage.setAttribute("width", "auto");
 //  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+//  let myH2 = document.createElement('h3');
+  //myH2.textContent = print.name;
+  //let myH3 = document.createElement('h3');
+  //myH3.textContent = print.num;
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
-});
+//  document.getElementById("printfilter").appendChild(pokemonImage);
+//  document.getElementById('printfilter').appendChild(myH2);
+  //document.getElementById('printfilter').appendChild(myH3);
 
 typebug.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let bug = typebug.value;
 let firstp = POKEMON.pokemon.filter(bugs => {return bugs.type.includes("Bug")});
 //let firstpstring = JSON.stringify(firstp);
 
-alert("Seleccionaste tipo Insecto");
+
 //document.getElementById("printfilter").innerHTML = "these are bug type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
+    contenedor.innerHTML +=
+
+    `<div id= "divcon">
+    <img id= "imgcon" src="${print.img}" >
+    <h1> ${print.name}</h1>
+    <h4> ${print.num} </h4>
+    </div>`;
+    });
+  });
+
+//  let pokemonImage = document.createElement("IMG");
+//  pokemonImage.setAttribute("src", print.img);
 //  pokemonImage.setAttribute("width", "auto");
 //  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+//  let myH2 = document.createElement('h3');
+//  myH2.textContent = print.name;
+//  let myH3 = document.createElement('h3');
+//  myH3.textContent = print.num;
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
-});
+//  document.getElementById("printfilter").appendChild(pokemonImage);
+//  document.getElementById('printfilter').appendChild(myH2);
+//  document.getElementById('printfilter').appendChild(myH3);
 
 typefly.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let fly = typefly.value;
 let firstp = POKEMON.pokemon.filter(flies => {return flies.type.includes("Flying")});
 //let firstpstring = JSON.stringify(firstp);
 
-alert("Seleccionaste tipo volador");
+
 //document.getElementById("printfilter").innerHTML = "these are flying type pokemon" + firstpstring;
 
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-});
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
+  });
 
 typepoison.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let poison = typepoison.value;
 let firstp = POKEMON.pokemon.filter(pois => {return pois.type.includes("Poison")});
 //let firstpstring = JSON.stringify(firstp);
 
-alert("Seleccionaste tipo Veneno");
+
 //document.getElementById("printfilter").innerHTML = "these are Poison type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typerock.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let rock = typerock.value;
 let firstp = POKEMON.pokemon.filter(rocky => {return rocky.type.includes("Rock")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Roca");
 //document.getElementById("printfilter").innerHTML = "these are Rock type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
-});
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
+  });
 
 typenormal.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let normal = typenormal.value;
 let firstp = POKEMON.pokemon.filter(norm => {return norm.type.includes("Normal")});
 //let firstpstring = JSON.stringify(firstp);
 
-alert("Seleccionaste tipo Normal");
 //document.getElementById("printfilter").innerHTML = "these are Normal type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
-});
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
+  });
 
 typeelectric.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let electric = typeelectric.value;
 let firstp = POKEMON.pokemon.filter(elec => {return elec.type.includes("Electric")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Electrico");
 //document.getElementById("printfilter").innerHTML = "these are Electric type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
+  contenedor.innerHTML +=
 
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typeground.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let ground = typeground.value;
 let firstp = POKEMON.pokemon.filter(gro => {return gro.type.includes("Ground")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Tierra");
 //document.getElementById("printfilter").innerHTML = "these are Ground type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-});
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
+  });
 
 typefight.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let fight = typefight.value;
 let firstp = POKEMON.pokemon.filter(fi => {return fi.type.includes("Fighting")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Luchador");
 //document.getElementById("printfilter").innerHTML = "these are Fighting type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typepsy.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let psy = typepsy.value;
 let firstp = POKEMON.pokemon.filter(psy => {return psy.type.includes("Psychic")});
 
-alert("Seleccionaste tipo Psiquico");
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typeice.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let ice = typeice.value;
 let firstp = POKEMON.pokemon.filter(ice => {return ice.type.includes("Ice")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Hielo");
 //document.getElementById("printfilter").innerHTML = "these are Ice type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typeghost.addEventListener("click",() => {
+  contenedor.innerHTML= "";
 
 let ghost = typeghost.value;
 let firstp = POKEMON.pokemon.filter(gho => {return gho.type.includes("Ghost")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Fantasma");
 //document.getElementById("printfilter").innerHTML = "these are Ghost type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
 
 typedragon.addEventListener("click",() => {
+contenedor.innerHTML= "";
 
 let dragon = typedragon.value;
 let firstp = POKEMON.pokemon.filter(drag => {return drag.type.includes("Dragon")});
 //let firstpstring = JSON.stringify(firstp);
-
-alert("Seleccionaste tipo Dragon");
 //document.getElementById("printfilter").innerHTML = "these are Dragon type pokemon" + firstpstring;
 let pokemonDataSelect = firstp.forEach(print => {
 
-  let pokemonImage = document.createElement("IMG");
-  pokemonImage.setAttribute("src", print.img);
-//  pokemonImage.setAttribute("width", "auto");
-//  pokemonImage.setAttribute("height", "auto");
-  let myH2 = document.createElement('h3');
-  myH2.textContent = print.name;
-  let myH3 = document.createElement('h3');
-  myH3.textContent = print.num;
+  contenedor.innerHTML +=
 
-  document.getElementById("printfilter").appendChild(pokemonImage);
-  document.getElementById('printfilter').appendChild(myH2);
-  document.getElementById('printfilter').appendChild(myH3);
-});
-
+  `<div id= "divcon">
+  <img id= "imgcon" src="${print.img}" >
+  <h1> ${print.name}</h1>
+  <h4> ${print.num} </h4>
+  </div>`;
+  });
 });
