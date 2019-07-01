@@ -1,18 +1,90 @@
+#wpw{
+    vertical-align:middle;
+}
+
+#inicio{
+
+text-align:center;
+}
+
 body{
-background-image: url(https://i.pinimg.com/originals/b2/f1/73/b2f173be95691e5e0184bb16b67d105b.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+
+  background-image: url(https://img.wallpapersafari.com/tablet/2560/1700/63/3/pxPkc6.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
-#water,#fire, #grass,#bug,#fly,#poison,#rock,#normal,#electric,#ground, #fight,#psy,#ice,#ghost,#dragon{
-  width: 50px;
-  height: 50px;
+.myButtons{
+  width: 60px;
+  height: 60px;
+
+}
+
+.myButtons:hover{
+  width: 80px;
+  height: 80px;
+}
+
+#firstPage{
+align-content: center;
+text-align: center;
 
 }
 
 h1,p,h2{
   text-align: center;
   color: white;
+
+
+}
+
+h4{
+  text-align: left;
+  color: white;
+}
+
+h5{
+text-align: left;
+color: white;
+
+}
+
+
+#container-result{
+
+width: 960px;
+display:inline-block;
+text-align:center;
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
+}
+
+#divcon{
+height: 280px; width: 280px; float:left;
+border-style: outset;
+border-width: 5px;
+border-color: white;
+
+ padding: 0.5em;
+ margin-left: 0.5em;
+ margin-right: 0.5em;
+ margin-top: 0.5em;
+margin-bottom: 0.5em;
+align-content: center;
+position: relative;
+
+}
+#divcon img{
+  position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
+  height: 180px; width: 180px;
+  top: 25%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
+  right: 0; /* se debe usar para que margin 0 auto funcione */
+  left: 0; /* se debe usar para que margin 0 auto funcione */
+  margin: 0 auto;
 
 }
