@@ -58,11 +58,21 @@ let show = showAll.value;
 let allPokemons = POKEMON.pokemon.forEach( showPokemon => {
 
 contenedor.innerHTML +=
-` <div id= "divcon">
-<img id= "imgcon" src="${showPokemon.img}" >
-<h1> ${showPokemon.name}</h1>
-<h5> ${showPokemon.type}</h5>
-<h4> ${showPokemon.num} </h4>
+`<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src=${showPokemon.img} alt="Avatar" style="width:200px;height:200px;">
+      <h1>${showPokemon.name}</h1>
+
+    </div>
+    <div class="flip-card-back">
+      <h6>Id: ${showPokemon.num} </h6>
+      <h6>Type: ${showPokemon.type}</h6>
+      <h6>Height: ${showPokemon.height} </h6>
+      <h6>Weignt: ${showPokemon.weight}</h6>
+      <h7> Weaknesses: ${showPokemon.weaknesses} </h7>
+    </div>
+  </div>
 </div>`
 
 } );

@@ -53,6 +53,10 @@ h5{
   color: white;
 }
 
+h6{
+  font-size: 15px;
+
+}
 
 #container-result{
   width: 960px;
@@ -64,40 +68,54 @@ h5{
   right: 0;
 }
 
-#divcon{
-  height: 280px; width: 280px; float:left;
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  perspective: 1000px;
+  border-color: white;
   border-style: outset;
   border-width: 5px;
-  border-color: white;
-  padding: 0.5em;
+  float:left;
   margin-left: 0.5em;
   margin-right: 0.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  align-content: center;
+
+}
+
+.flip-card-inner {
   position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-#imgcon{
-  position: absolute; /* se usa en caso de este div, donde tiene la altura y el ancho definido, sin esto top, right y left no funcionarían */
-  height: 180px; width: 180px;
-  top: 25%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
-  right: 0; /* se debe usar para que margin 0 auto funcione */
-  left: 0; /* se debe usar para que margin 0 auto funcione */
-  margin: 0 auto;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-#divconind{
-float: right;
-border-color: white;
-border-width: 5px;
- width: 50%;
- height: 600px;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-#divconind2{
+.flip-card-front {
+  background-color:transparent;
+  color: black;
   float: left;
-   width: 50%;
-   vertical-align: middle;
+}
+
+.flip-card-back {
+  background-color:  #000000;
+  color: white;
+  transform: rotateY(180deg);
+float: left;
 
 }
