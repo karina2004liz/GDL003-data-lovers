@@ -14,6 +14,53 @@ let typeice = document.getElementById('ice');
 let typeghost = document.getElementById('ghost');
 let typedragon = document.getElementById('dragon');
 let showAll = document.getElementById('showAll');
+
+
+let orderNameAsc = document.getElementById ('orderNameAsc');
+let orderNameDesc = document.getElementById ('orderNameDesc');
+let orderIdAsc = document.getElementById ('orderIdAsc');
+let orderIdDesc = document.getElementById ('orderIdDesc');
+
+const data= POKEMON.pokemon;
+
+/*orderIdAsc.addEventListener("click", () => {
+
+  let orderByIdAsc = data.sort(function (a, b){
+      return ((a.num < b.num) ? -1 : ((a.num > b.num) ? 1 : 0));
+  });
+  console.log(data);
+});
+
+
+orderIdDesc.addEventListener("click", () => {
+
+  let orderByIdDesc = data.sort(function (a, b){
+      return ((a.num < b.num) ? 1 : ((a.num > b.num) ? -1 : 0));
+  });
+  console.log(data);
+});
+*/
+
+orderNameDesc.addEventListener("click", () =>{
+
+  let orderByNameDesc = data.sort(function (a, b){
+      return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
+  });
+  console.log(data);
+});
+
+orderNameAsc.addEventListener("click", () =>{
+
+  const data= POKEMON.pokemon;
+  let orderByNameAsc = data.sort(function (a, b){
+      return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
+  });
+  console.log(data);
+});
+
+
+
+
 const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
 const allOfThem = Object.values(POKEMON.pokemon);
 console.log(allOfThem);
@@ -404,3 +451,62 @@ let pokemonDataSelect = firstp.forEach(print => {
   </div>`;
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*data.sort();
+
+for(var i=0; i < data.length; i++){
+  console.log(data[i]);
+}
+
+/*const equal = (one, other) => JSON.stringify(one) === JSON.stringify(other);
+
+let orderByName = data.sort ((a,b)) => {
+  if (a.name > b.name) {
+    return 1
+  }
+    return -1
+};
+
+/*orderPokemon.addEventListener("click",() => {
+  const orderData = (data, sortBy, sortOrder) => {
+  const orderResult = data.sort((a, b) => {
+    return a[sortBy].localeCompare(b[sortBy]);
+  })
+  if (sortOrder === "asc") {
+    return orderResult;
+  }
+  if (sortOrder === "des") {
+    return orderResult.reverse();
+  }
+}
+});
+console.log(orderResult);
+/*orderingBy: (arr, sortBy, orderCondition) => {
+   let orderedPkmn = [];
+   if (sortBy == "name"){
+     if(orderCondition == "asc"){
+       orderedPkmn = arr.sort((a, b) => a.name.localeCompare(b.name));
+     }
+     else {
+       orderedPkmn = arr.sort((a, b) => a.name.localeCompare(b.name)).reverse();
+     }
+   }
+   console.log(orderingBy);
+ };
+*/
