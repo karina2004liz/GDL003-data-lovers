@@ -14,32 +14,60 @@ let typeice = document.getElementById('ice');
 let typeghost = document.getElementById('ghost');
 let typedragon = document.getElementById('dragon');
 let showAll = document.getElementById('showAll');
-const contenedor = document.getElementById('container-result');
-
-let allOfThem = POKEMON.pokemon;
+const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
+const allOfThem = Object.values(POKEMON.pokemon);
 console.log(allOfThem);
+const txtCont = document.getElementById('txtCont');
+const txtSearch = document.getElementById('txtSearch');
+const showOne = document.getElementById('imgcon');
+
+
+//modal
 
 
 
+//Filtrado por busqueda
+txtSearch.addEventListener("click",() => {
+contenedor.innerHTML= "";
+let valor = txtCont.value;
+let min = valor.replace(/\b\w/g, l => l.toUpperCase());
+let dataPoke = allOfThem.find(pok => {
+  return pok.name.includes(min);
+})
+  contenedor.innerHTML +=
+  `<div id= "divconind">
+  <img id= "imgconind" src="${dataPoke.img}" >
+  </div>
+  <div id= "divconind2">
+  <h1> ${dataPoke.name}</h1>
+  <h1>Id: ${dataPoke.num} </h1>
+  <h1>Type: ${dataPoke.type}</h1>
+  <h1>Height: ${dataPoke.height} </h1>
+  <h1>Weignt: ${dataPoke.weight}</h1>
+  <h2> Weaknesses: ${dataPoke.weaknesses} </h2>
+  </div>`
+
+});
+
+//  <h1> Next evolution: ${dataPoke.next_evolution[0].name}</h1>
+
+//Mostrar todos
 showAll.addEventListener("click",() => {
-  contenedor.innerHTML= "";
-
+contenedor.innerHTML= "";
 let show = showAll.value;
-
-
 let allPokemons = POKEMON.pokemon.forEach( showPokemon => {
 
 contenedor.innerHTML +=
-
 ` <div id= "divcon">
 <img id= "imgcon" src="${showPokemon.img}" >
 <h1> ${showPokemon.name}</h1>
 <h5> ${showPokemon.type}</h5>
 <h4> ${showPokemon.num} </h4>
-</div>`;
+</div>`
+
+} );
 });
-//console.log(waterDataSelect);
-});
+
 
 //<button type="button" class="btn btn-block btn-style"
 //id="botonModal"  data-id="${fire.id}"
@@ -80,7 +108,10 @@ let pokemonDataSelect = firstp.forEach(print => {
   <img id= "imgcon" src="${print.img}" >
   <h1> ${print.name}</h1>
   <h4> ${print.num} </h4>
-  </div>`;
+  </div>
+
+
+  `;
   });
 });
 
