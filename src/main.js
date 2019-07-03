@@ -59,7 +59,7 @@ orderNameAsc.addEventListener("click", () =>{
 });
 
 
-let allOfThem = POKEMON.pokemon;
+
 
 const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
 const allOfThem = Object.values(POKEMON.pokemon);
