@@ -144,7 +144,6 @@ float: left;
 @media screen and (max-width: 640px) {
 
 body {
-  position: fixed;
   left: 81.6%;
   right: 0%;
   top: 0%;
@@ -154,7 +153,7 @@ body {
   background-image: url("pokebola2.jpeg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position:fixed;
   text-align:center;
   font-size: 80%;
 }
