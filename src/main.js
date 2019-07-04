@@ -16,7 +16,7 @@ let typedragon = document.getElementById('dragon');
 let showAll = document.getElementById('showAll');
 
 const buttons = document.getElementsByClassName('myButtons');
-console.log(buttons);
+console.log(buttons.length);
 
 
 let orderNameAsc = document.getElementById ('orderNameAsc');
@@ -138,7 +138,7 @@ typefire.addEventListener("click",()=>{
   contenedor.innerHTML= "";
 let fire = typefire.value;
 let firstp = POKEMON.pokemon.filter(fire =>{return fire.type.includes ("Fire")});
-
+estadistica.innerHTML= "";
 let stadic = firstp.length;
 let static2 =  (151/100)* stadic + "% of pokemon are of this type";
 

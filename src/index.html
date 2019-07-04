@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
@@ -10,38 +10,39 @@
 
   </head>
   <body>
+
 <h1 id= "stad"></h1>
 
     <div class="search">
   <input type="text" name="" value="" autocomplete="off" id= "txtCont">
-  <input type="button" name="" value="Search" id= "txtSearch">
+  <input type="button" name="" value="Search" id= "txtSearch" class="myOtherButtons">
     </div>
 
 <div id= "inicio" class="">
 <img src="https://fontmeme.com/permalink/190704/2f6c782c9eca2c83524d0fee763c13dd.png" id= "wpw">
 <br>
-Selecciona orden <input class="myOtherButtons" id=orderNameAsc type="button" name="" value="Asc"> <input class="myOtherButtons" id=orderNameDesc type="button" name="" value="Des">
-<p>Selecciona el tipo</p>
+Select the sort order <input class="myOtherButtons" id=orderNameAsc type="button" name="" value="Asc"> <input class="myOtherButtons" id=orderNameDesc type="button" name="" value="Des">
+<p>Select type</p>
 </div>
 
 
 <div class="bttimg" id= "firstPage">
-<input type="image" src="water.png" id= "water" title="water" class="myButtons">
-<input type="image" src="fire.png" id= "fire" title="fire" class="myButtons" >
-<input type="image" src="grass.png" id= "grass" title="grass" class="myButtons" >
-<input type="image" src="bug.png" id= "bug" title="bug" class="myButtons"  >
-<input type="image" src="fly.png" id= "fly" title="flying" class="myButtons" >
-<input type="image" src="poison.png" id= "poison" title="poison" class="myButtons" >
-<input type="image" src="rock.png" id= "rock" title="rock" class="myButtons" >
-<input type="image" src="normal.png" id= "normal" title="normal" class="myButtons" >
-<input type="image" src="electric.png" id= "electric" title="electric" class="myButtons" >
-<input type="image" src="ground.png" id= "ground" title="ground" class="myButtons" >
-<input type="image" src="fight.png" id= "fight" title="fighting" class="myButtons" >
-<input type="image" src="psy.png" id= "psy" title="psychic" class="myButtons" >
-<input type="image" src="ice.png" id= "ice" title="ice" class="myButtons" >
-<input type="image" src="ghost.png" id= "ghost" title="ghost" class="myButtons" >
-<input type="image" src="dragon.png" id= "dragon" title="dragon" class="myButtons" >
-<input type="image" scr="crystal.png" class="myOtherButtons" title="ALL POKEMON" id = "showAll">
+<input type="image" data-sats= "water" src="water.png" id= "water" title="water" class="myButtons">
+<input type="image" data-sats= "fire" src="fire.png" id= "fire" title="fire" class="myButtons" >
+<input type="image" data-sats= "grass" src="grass.png" id= "grass" title="grass" class="myButtons" >
+<input type="image" data-sats= "bug" src="bug.png" id= "bug" title="bug" class="myButtons"  >
+<input type="image" data-sats= "fly" src="fly.png" id= "fly" title="flying" class="myButtons" >
+<input type="image" data-sats= "poison" src="poison.png" id= "poison" title="poison" class="myButtons" >
+<input type="image" data-sats= "rock" src="rock.png" id= "rock" title="rock" class="myButtons" >
+<input type="image" data-sats= "normal" src="normal.png" id= "normal" title="normal" class="myButtons" >
+<input type="image" data-sats= "electric" src="electric.png" id= "electric" title="electric" class="myButtons" >
+<input type="image" data-sats= "ground" src="ground.png" id= "ground" title="ground" class="myButtons" >
+<input type="image" data-sats= "fight" src="fight.png" id= "fight" title="fighting" class="myButtons" >
+<input type="image" data-sats= "psy" src="psy.png" id= "psy" title="psychic" class="myButtons" >
+<input type="image" data-sats= "ice" src="ice.png" id= "ice" title="ice" class="myButtons" >
+<input type="image" data-sats= "ghost" src="ghost.png" id= "ghost" title="ghost" class="myButtons" >
+<input type="image" data-sats= "dragon" src="dragon.png" id= "dragon" title="dragon" class="myButtons" >
+<input type="button" data-sats= "showAll" value= "Show All" class="myOtherButtons" id = "showAll">
 </div>
 
 <div id= "container-result" class="row">
