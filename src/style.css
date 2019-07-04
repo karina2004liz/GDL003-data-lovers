@@ -1,14 +1,14 @@
+/* Diseño para PC */
+@media screen and (min-width: 1025px) {
+
 body {
-  position: relative;
-  width: 360px;
-  height: 640px;
   background-image: url("pokebola2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width:100%;
   text-align:center;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 #search{
@@ -134,37 +134,36 @@ h6{
   color: white;
   transform: rotateY(180deg);
 float: left;
-
 }
+}
+
 
 
 /* Diseño para celulares */
-#columna1, #columna2, #columna3 {
-	float:none;
-	width:100%;
+
+@media screen and (max-width: 640px) {
+
+body {
+  position: fixed;
+  left: 81.6%;
+  right: 0%;
+  top: 0%;
+  bottom: 37.5%;
+  width: 360px;
+  height: 640px;
+  background-image: url("pokebola2.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align:center;
+  font-size: 80%;
+}
 }
 
 /* Diseño para tabletas */
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
 	#columna1, #columna2 {
 		float:left;
 		width:50%;
 	}
-}
-
-/* Diseño para PC */
-@media screen and (min-width: 1025px) {
-	#columna1, #columna2, #columna3 {
-	float:left;
-	width:33%;
-}
-body {
-  background-image: url("pokebola2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width:100%;
-  text-align:center;
-  font-size: 80%;
-}
 }
