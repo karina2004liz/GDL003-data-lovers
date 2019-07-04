@@ -5,58 +5,52 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
-
   </head>
+
   <body>
+     <section id= "search">
+       <input type="text" name="" value="" autocomplete="off" id= "txtCont">
+       <input type="button" name="" value="Search" id= "txtSearch" class ="btn">
+     </section>
 
+     <section id= "title">
+       <img src="https://fontmeme.com/permalink/190701/b6c42950635939d5e83cb8a57e686931.png" id= "wpw">
+     </section>
 
-    <div class="search">
-  <input type="text" name="" value="" autocomplete="off" id= "txtCont">
-  <input type="button" name="" value="Search" id= "txtSearch">
-    </div>
+     <section id ="orderButtons" >
+       <button id=orderNameAsc class = "btn">Ascendente</button>
+       <button id=orderNameDesc class = "btn">Descendente</button>
+     </section>
 
-<div id= "inicio" class="">
-<img src="https://fontmeme.com/permalink/190701/b6c42950635939d5e83cb8a57e686931.png" id= "wpw">
-<img src="https://fontmeme.com/permalink/190701/0af2e589694c0c20f0704d0884a72784.png">
-</div>
+     <section> <input type="button" name="" value="Show all" id = "showAll" class =btn> </section>
 
+     <section id= "phrase">
+       <img src="https://fontmeme.com/permalink/190701/0af2e589694c0c20f0704d0884a72784.png">
+     </section>
 
-<div class="bttimg" id= "firstPage">
-<input type="image" src="water.png" id= "water" title="water" class="myButtons">
-<input type="image" src="fire.png" id= "fire" title="fire" class="myButtons" >
-<input type="image" src="grass.png" id= "grass" title="grass" class="myButtons" >
-<input type="image" src="bug.png" id= "bug" title="bug" class="myButtons"  >
-<input type="image" src="fly.png" id= "fly" title="flying" class="myButtons" >
-<input type="image" src="poison.png" id= "poison" title="poison" class="myButtons" >
-<input type="image" src="rock.png" id= "rock" title="rock" class="myButtons" >
-<input type="image" src="normal.png" id= "normal" title="normal" class="myButtons" >
-<input type="image" src="electric.png" id= "electric" title="electric" class="myButtons" >
-<input type="image" src="ground.png" id= "ground" title="ground" class="myButtons" >
-<input type="image" src="fight.png" id= "fight" title="fighting" class="myButtons" >
-<input type="image" src="psy.png" id= "psy" title="psychic" class="myButtons" >
-<input type="image" src="ice.png" id= "ice" title="ice" class="myButtons" >
-<input type="image" src="ghost.png" id= "ghost" title="ghost" class="myButtons" >
-<input type="image" src="dragon.png" id= "dragon" title="dragon" class="myButtons" >
-<input type="button" name="" value="Show all" id = "showAll">
-</div>
+     <section id= "typeButtons">
+        <input type="image" src="water.png" id= "water" title="Water" class="myButtons" value="Water">
+        <input type="image" src="fire.png" id= "fire" title="Fire" class="myButtons" value= "Fire" >
+        <input type="image" src="grass.png" id= "grass" title="Grass" class="myButtons" value="Grass" >
+        <input type="image" src="bug.png" id= "bug" title="Bug" class="myButtons" value="Bug"  >
+        <input type="image" src="fly.png" id= "fly" title="Flying" class="myButtons" value="Fly" >
+        <input type="image" src="poison.png" id= "poison" title="Poison" class="myButtons" value="Poison" >
+        <input type="image" src="rock.png" id= "rock" title="Rock" class="myButtons" value="Rock">
+        <input type="image" src="normal.png" id= "normal" title="Normal" class="myButtons" value="Normal">
+        <input type="image" src="electric.png" id= "electric" title="Electric" class="myButtons" value ="Electric" >
+        <input type="image" src="ground.png" id= "ground" title="Ground" class="myButtons" value ="Ground">
+        <input type="image" src="fight.png" id= "fight" title="Fighting" class="myButtons" value = "Fight">
+        <input type="image" src="psy.png" id= "psy" title="Psychic" class="myButtons" value ="Psychic" >
+        <input type="image" src="ice.png" id= "ice" title="Ice" class="myButtons" value= "Ice" >
+        <input type="image" src="ghost.png" id= "ghost" title="Ghost" class="myButtons" value = "Ghost">
+        <input type="image" src="dragon.png" id= "dragon" title="Dragon" class="myButtons" value= "Dragon" >
+     </section>
 
-<div id= "container-result" class="row">
-</div>
- <div id="container-modal"> </div>
+     <section id= "container-result" class="row"> </secction>
+     <secction id="container-modal"> </section>
 
-<div>
-  <button id=orderNameAsc>abc asc</button>
-  <button id=orderNameDesc>abc des</button>
-<!--  <button id=orderIdAsc>id asc</button>
-  <button id=orderIdDesc>id desc</button>
--->
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+     <script src="./data/pokemon/pokemon.js"></script>
+     <script src="data.js"></script>
+     <script src="main.js"></script>
   </body>
 </html>
