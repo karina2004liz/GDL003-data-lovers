@@ -157,6 +157,78 @@ body {
   text-align:center;
   font-size: 80%;
 }
+
+#search{
+  text-align:center;
+}
+
+#txtCont{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  opacity: 0.6;
+  background-color: #C4C4C4;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  margin: .62em;
+  padding: .3em 0em;
+  width: 12.5em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1em;
+  font-weight:bold;
+  border-radius: .62em;
+}
+
+.btn{
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 1em;
+   font-weight:bold;
+   margin: .62em;
+   padding: .31em 0em;
+   width: 6.25em;
+   height: 3.1em;
+   cursor: pointer;
+   text-decoration: none;
+   box-shadow: 0em .18em 0em;
+   margin-bottom: 1em;
+   font-family: Roboto;
+   border-radius: .62em;
+   background-color: transparent;
+}
+
+.btn:hover{
+  width: 6.87em;
+  height: :6.25em;
+}
+
+#title {
+  text-align: left;
+}
+
+#wpw{
+  max-width: 85%
+}
+
+#phrase{
+  max-width: 90%
+}
+
+#typeButtons {
+  text-align: left;
+}
+
+.myButtons{
+max-width: 10%
+}
+
+.myButtons:hover{
+  width: 5em;
+  height: 5em;
+}
+
 }
 
 /* Diseño para tabletas */
