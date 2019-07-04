@@ -1,26 +1,56 @@
-.search{
-  text-align: right;
-  color:#00FF44;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 25px;
-  opacity: 0.6;
-
-}
-
-#wpw{
-  vertical-align:middle;
-
-}
-
-#inicio{
-  text-align:center;
-}
-
-body{
-  background-image: url(https://img.wallpapersafari.com/tablet/2560/1700/63/3/pxPkc6.jpg);
+body {
+  background-image: url("pokebola2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width:100%;
+  text-align:center;
+}
+
+#search{
+  text-align:right;
+}
+
+#txtCont{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  opacity: 0.6;
+  background-color: #C4C4C4;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px;
+  padding: 5px 0px;
+  width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight:bold;
+  border-radius: 10px;
+}
+
+.btn{
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 1em;
+   font-weight:bold;
+   margin: 10px;
+   padding: 5px 0px;
+   width: 100px;
+   height: 50px;
+   cursor: pointer;
+   text-decoration: none;
+   box-shadow: 0px 3px 0px;
+   margin-bottom: 1rem;
+   font-family: Roboto;
+   border-radius: 10px;
+   background-color: transparent;
+}
+
+.btn:hover{
+  width: 110px;
+  height: :100px;
 }
 
 .myButtons{
@@ -33,31 +63,6 @@ body{
   height: 80px;
 }
 
-#firstPage{
-align-content: center;
-text-align: center;
-}
-
-h1,p,h2{
-  text-align: center;
-  color: white;
-}
-
-h4{
-  text-align: left;
-  color: white;
-}
-
-h5{
-  text-align: left;
-  color: white;
-}
-
-h6{
-  font-size: 15px;
-
-}
-
 #container-result{
   width: 960px;
   display:inline-block;
@@ -68,6 +73,14 @@ h6{
   right: 0;
 }
 
+h1,p,h2, h4, h5{
+  text-align: center;
+  color: white;
+}
+
+h6{
+  font-size: 15px;
+}
 
 .flip-card {
   background-color: transparent;
@@ -118,4 +131,26 @@ h6{
   transform: rotateY(180deg);
 float: left;
 
+}
+
+
+/* Diseño para celulares */
+#columna1, #columna2, #columna3 {
+	float:none;
+	width:100%;
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 800px) {
+	#columna1, #columna2 {
+		float:left;
+		width:50%;
+	}
+}
+
+/* Diseño para PC */
+@media screen and (min-width: 1025px) {
+	#columna1, #columna2, #columna3 {
+	float:left;
+	width:33%;
 }
