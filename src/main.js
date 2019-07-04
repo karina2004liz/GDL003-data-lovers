@@ -15,6 +15,9 @@ let typeghost = document.getElementById('ghost');
 let typedragon = document.getElementById('dragon');
 let showAll = document.getElementById('showAll');
 
+const buttons = document.getElementsByClassName('myButtons');
+console.log(buttons);
+
 
 let orderNameAsc = document.getElementById ('orderNameAsc');
 let orderNameDesc = document.getElementById ('orderNameDesc');
@@ -67,7 +70,7 @@ console.log(allOfThem);
 const txtCont = document.getElementById('txtCont');
 const txtSearch = document.getElementById('txtSearch');
 const showOne = document.getElementById('imgcon');
-
+const estadistica = document.getElementById('stad');
 
 //modal
 
@@ -135,6 +138,17 @@ typefire.addEventListener("click",()=>{
   contenedor.innerHTML= "";
 let fire = typefire.value;
 let firstp = POKEMON.pokemon.filter(fire =>{return fire.type.includes ("Fire")});
+
+let stadic = firstp.length;
+let static2 =  (151/100)* stadic + "% of pokemon are of this type";
+
+estadistica.innerHTML +=
+
+`<div id = "stadistic">
+<h5> ${static2}</h5>
+
+  </div> `
+;
 
 let pokemonDataSelect = firstp.forEach(print => {
 

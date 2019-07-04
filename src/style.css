@@ -1,3 +1,8 @@
+#stad{
+text-align: top;
+position: fixed;
+}
+
 .search{
   text-align: right;
   color:#00FF44;
@@ -14,6 +19,9 @@
 
 #inicio{
   text-align:center;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+  color: white;
 }
 
 body{
@@ -21,6 +29,11 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#showAll{
+  width: 60px;
+  height: 60px;
 }
 
 .myButtons{
@@ -40,6 +53,7 @@ text-align: center;
 
 h1,p,h2{
   text-align: center;
+  font-family: 'Love Ya Like A Sister', cursive;
   color: white;
 }
 
