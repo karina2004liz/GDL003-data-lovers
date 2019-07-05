@@ -420,7 +420,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 - [ ] Utiliza Librerías de graficas (`chart.js` ó `google chart`).
 - [ ] Cobertura de coverage al 100%.
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 # **Data Lovers**
 
