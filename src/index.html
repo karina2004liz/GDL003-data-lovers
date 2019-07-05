@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
 
+  </head>
+  
   <body>
+  
+  <h1 id= "stad"></h1>
+  
      <section id= "search">
        <input type="text" name="" value="" autocomplete="off" id= "txtCont">
        <input type="button" name="" value="Search" id= "txtSearch" class ="btn">
@@ -18,6 +24,7 @@
      </section>
 
      <section id ="orderButtons" >
+       Select the sort order
        <button id=orderNameAsc class = "btn">Ascendente</button>
        <button id=orderNameDesc class = "btn">Descendente</button>
      </section>
@@ -25,10 +32,11 @@
      <section> <input type="button" name="" value="Show all" id = "showAll" class =btn> </section>
 
      <section id= "phrase">
-       <img src="https://fontmeme.com/permalink/190701/0af2e589694c0c20f0704d0884a72784.png" id= "phrase">
+       Select type
      </section>
 
      <section id= "typeButtons">
+       <p>Select type</p>
         <input type="image" src="water.png" id= "water" title="Water" class="myButtons" value="Water">
         <input type="image" src="fire.png" id= "fire" title="Fire" class="myButtons" value= "Fire" >
         <input type="image" src="grass.png" id= "grass" title="Grass" class="myButtons" value="Grass" >
@@ -52,5 +60,6 @@
      <script src="./data/pokemon/pokemon.js"></script>
      <script src="data.js"></script>
      <script src="main.js"></script>
+
   </body>
 </html>

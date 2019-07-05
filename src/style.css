@@ -10,6 +10,10 @@ body {
   text-align:center;
   font-size: 100%;
 }
+  
+#stad{
+text-align: left;
+}
 
 #search{
   text-align:right;
@@ -78,11 +82,13 @@ body {
 }
 
 h1,p,h2, h4, h5{
+  font-family: 'Love Ya Like A Sister', cursive;
   text-align: center;
   color: white;
 }
 
 h6{
+  font-family: 'Love Ya Like A Sister', cursive;
   font-size: 1em;
 }
 
@@ -138,6 +144,12 @@ float: left;
 }
 
 
+
+
+#divconind{
+  float: right;
+  width: 700px;
+}
 
 /* Diseño para celulares */
 
@@ -212,10 +224,6 @@ body {
   max-width: 85%
 }
 
-#phrase{
-  max-width: 90%
-}
-
 #typeButtons {
   text-align: left;
 }
@@ -231,10 +239,4 @@ max-width: 10%
 
 }
 
-/* Diseño para tabletas */
-/*@media screen and (min-width: 800px) {
-	#columna1, #columna2 {
-		float:left;
-		width:50%;
-	}
-}
+

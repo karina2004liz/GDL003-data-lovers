@@ -1,9 +1,3 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-const example = () => {
-  return 'example';
-};
 
 const filter = () => {
   return "filter";
@@ -18,8 +12,7 @@ const statistics = () => {
 };
 
 window.example = {
-  example,
-  filter,
+  filterPokemon,
   order,
   statistics,
 };
