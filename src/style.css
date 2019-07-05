@@ -1,99 +1,74 @@
+/* Diseño para PC */
+@media screen and (min-width: 1025px) {
 
-
+body {
+  background-image: url("pokebola2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width:100%;
+  text-align:center;
+  font-size: 100%;
+}
+  
 #stad{
 text-align: left;
 }
 
-.search{
-  text-align: right;
-  color:#00FF44;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 25px;
-  opacity: 0.6;
-
+#search{
+  text-align:right;
 }
 
-#wpw{
-  vertical-align:middle;
-
-}
-
-#inicio{
-  text-align:center;
-  font-family: 'Love Ya Like A Sister', cursive;
-  font-size: 20px;
+#txtCont{
   color: white;
+  font-family: 'Patrick Hand', cursive;
+  opacity: 0.6;
+  background-color: #C4C4C4;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  margin: .62em;
+  padding: .3em 0em;
+  width: 12.5em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1em;
+  font-weight:bold;
+  border-radius: .62em;
 }
 
-body{
-  background-image: url(https://img.wallpapersafari.com/tablet/2560/1700/63/3/pxPkc6.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.btn{
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 1em;
+   font-weight:bold;
+   margin: .62em;
+   padding: .31em 0em;
+   width: 6.25em;
+   height: 3.1em;
+   cursor: pointer;
+   text-decoration: none;
+   box-shadow: 0em .18em 0em;
+   margin-bottom: 1em;
+   font-family: Roboto;
+   border-radius: .62em;
+   background-color: transparent;
 }
 
-
+.btn:hover{
+  width: 6.87em;
+  height: :6.25em;
+}
 
 .myButtons{
-  width: 60px;
-  height: 60px;
+  width: 3.75em;
+  height: 3.75em;
 }
 
 .myButtons:hover{
-  width: 80px;
-  height: 80px;
-}
-
-
-.myOtherButtons{
-  opacity: 0.7;
-  line-height:15px;
-  text-align: center;
-  width: 80px;
-  height: 30px;
-  position: static;
-  border:2px solid white; -webkit-border-radius: 8px; -moz-border-radius: 8px;border-radius: 8px;font-size:16px;  font-family: 'Patrick Hand', cursive; padding: 2px 2px 2px 2px; text-decoration:none;text-shadow: -1px -1px 0 rgba(0,0,0,0);font-weight:bold; color: #FFFFFF;
-   background-color: #45484d; background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(#000000));
-   background-image: -webkit-linear-gradient(top, #45484d, #000000);
-   background-image: -moz-linear-gradient(top, #45484d, #000000);
-   background-image: -ms-linear-gradient(top, #45484d, #000000);
-   background-image: -o-linear-gradient(top, #45484d, #000000);
-   background-image: linear-gradient(to bottom, #45484d, #000000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484d, endColorstr=#000000);
-
-  }
-
-  .myOtherButtons:hover{
-    opacity: 0.9;
-    width: 110px;
-    height: 40px;
-
-  }
-
-
-#firstPage{
-align-content: center;
-text-align: center;
-}
-
-h1,p,h2{
-  text-align: center;
-  font-family: 'Love Ya Like A Sister', cursive;
-  color: white;
-}
-
-h4{
-  text-align: left;
-  color: white;
-}
-
-h5{
-  text-align: left;
-  color: white;
-}
-
-h6{
-  font-size: 15px;
-
+  width: 5em;
+  height: 5em;
 }
 
 #container-result{
@@ -106,11 +81,16 @@ h6{
   right: 0;
 }
 
-#divconind{
-  float: right;
-  width: 700px;
+h1,p,h2, h4, h5{
+  font-family: 'Love Ya Like A Sister', cursive;
+  text-align: center;
+  color: white;
 }
 
+h6{
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 1em;
+}
 
 .flip-card {
   background-color: transparent;
@@ -157,9 +137,106 @@ h6{
 
 .flip-card-back {
   background-color:  #000000;
-  opacity:0.9;
   color: white;
   transform: rotateY(180deg);
 float: left;
+}
+}
+
+
+
+
+#divconind{
+  float: right;
+  width: 700px;
+}
+
+/* Diseño para celulares */
+
+@media screen and (max-width: 640px) {
+
+body {
+  left: 81.6%;
+  right: 0%;
+  top: 0%;
+  bottom: 37.5%;
+  width: 360px;
+  height: 640px;
+  background-image: url("pokebola2.jpeg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position:fixed;
+  text-align:center;
+  font-size: 80%;
+}
+
+#search{
+  text-align:center;
+}
+
+#txtCont{
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  opacity: 0.6;
+  background-color: #C4C4C4;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  margin: .62em;
+  padding: .3em 0em;
+  width: 12.5em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 1em;
+  font-weight:bold;
+  border-radius: .62em;
+}
+
+.btn{
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 1em;
+   font-weight:bold;
+   margin: .62em;
+   padding: .31em 0em;
+   width: 6.25em;
+   height: 3.1em;
+   cursor: pointer;
+   text-decoration: none;
+   box-shadow: 0em .18em 0em;
+   margin-bottom: 1em;
+   font-family: Roboto;
+   border-radius: .62em;
+   background-color: transparent;
+}
+
+.btn:hover{
+  width: 6.87em;
+  height: :6.25em;
+}
+
+#title {
+  text-align: left;
+}
+
+#wpw{
+  max-width: 85%
+}
+
+#typeButtons {
+  text-align: left;
+}
+
+.myButtons{
+max-width: 10%
+}
+
+.myButtons:hover{
+  width: 5em;
+  height: 5em;
+}
 
 }
+
+
