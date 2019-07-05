@@ -168,11 +168,6 @@
 
 
 
-#divconind{
-  float: right;
-  width: 700px;
-}
-
 /* Diseño para celulares */
 
 @media screen and (max-width: 640px) {
@@ -284,7 +279,7 @@ body {
 }
 
 #txtCont{
-  color: white;
+  color: #FFFFFF;
   font-family: 'Patrick Hand', cursive;
   opacity: 0.6;
   background-color: #C4C4C4;
@@ -299,6 +294,7 @@ body {
   margin-bottom: 1em;
   font-weight:bold;
   border-radius: .62em;
+
 }
 
 .myOtherButtons{
@@ -387,6 +383,9 @@ h6{
   width: 320px;
 }
 
+#imgconind{
+  width: 320px;
+}
 
 .flip-card {
   background-color: transparent;
