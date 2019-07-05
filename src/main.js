@@ -15,7 +15,6 @@ const typeice = document.getElementById('ice');
 const typeghost = document.getElementById('ghost');
 const typedragon = document.getElementById('dragon');
 const showAll = document.getElementById('showAll');
-const buttons = document.getElementsByClassName('myButtons');
 
 // variables para filtrado ascendente y descendente
 let orderNameAsc = document.getElementById ('orderNameAsc');
@@ -23,7 +22,55 @@ let orderNameDesc = document.getElementById ('orderNameDesc');
 let orderIdAsc = document.getElementById ('orderIdAsc');
 let orderIdDesc = document.getElementById ('orderIdDesc');
 
+
+const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
+const allOfThem = Object.values(POKEMON.pokemon);
+console.log(allOfThem);
+const txtCont = document.getElementById('txtCont');
+const txtSearch = document.getElementById('txtSearch');
+const showOne = document.getElementById('imgcon');
+const estadistica = document.getElementById('stad');
+
+// constantes para obtener data y todos mis botones por type type
 const data= POKEMON.pokemon;
+const inputFilter = document.querySelectorAll('input.myButtons');
+console.log(inputFilter);
+
+
+/* Intento de filtrado universal
+inputFilter.forEach(element =>{
+  element.addEventListener("click",()=>{
+    estadistica.innerHTML= "";
+    contenedor.innerHTML = "";
+
+    let pokeFilter = window.filterType(data,element.getAtributte(myButtons));
+
+    contenedor.innerHTML+-`<div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src=${pokeFilter.img} alt="Avatar" style="width:200px;height:200px;">
+          <h1>${pokeFilter.name}</h1>
+
+        </div>
+        <div class="flip-card-back">
+          <h6>Id: ${pokeFilter.num} </h6>
+          <h6>Type: ${pokeFilter.type}</h6>
+          <h6>Height: ${pokeFilter.height} </h6>
+          <h6>Weignt: ${pokeFilter.weight}</h6>
+          <h7> Weaknesses: ${pokeFilter.weaknesses} </h7>
+        </div>
+      </div>
+    </div>`
+
+
+  })
+})
+
+*/
+
+
+
+
 
 //filtrado ascendente y descendente
 orderNameDesc.addEventListener("click", () =>{
@@ -44,13 +91,7 @@ orderNameAsc.addEventListener("click", () =>{
 });
 
 
-const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
-const allOfThem = Object.values(POKEMON.pokemon);
-console.log(allOfThem);
-const txtCont = document.getElementById('txtCont');
-const txtSearch = document.getElementById('txtSearch');
-const showOne = document.getElementById('imgcon');
-const estadistica = document.getElementById('stad');
+
 
 
 
@@ -109,10 +150,12 @@ contenedor.innerHTML +=
 
 // AQUI EMPIEZAN LOS BOTONES DE FILTRADO POR TIPO DE POKEMON
 
+
 typefire.addEventListener("click",()=>{
+
 contenedor.innerHTML= "";
-let fire = typefire.value;
-let firstp = POKEMON.pokemon.filter(fire =>{return fire.type.includes ("Fire")});
+let wather = typewhater.value;
+let firstp = POKEMON.pokemon.filter(water =>{return water.type.includes ("Fire")});
 
 estadistica.innerHTML= "";
 let stadic = firstp.length;
@@ -147,6 +190,8 @@ contenedor.innerHTML +=
 
 } );
 });
+
+
 
 
 typewhater.addEventListener("click",()=>{

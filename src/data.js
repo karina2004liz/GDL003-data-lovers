@@ -1,23 +1,16 @@
+//intento para filtrado
 
-const filterPokemon = filtrado => {
+const filterType = (data,type) => {
+  const pokeType = data.filter(element => element.type.includes(typeResult));
 
-  if(typewhater.value){
-    let firstp = POKEMON.pokemon.filter(water =>{return water.type.includes ("Water")});
+ return pokeType
 
-    let pokemonDataSelect = firstp.forEach(print => {
+}
 
-      contenedor.innerHTML +=
+window.filterType = filterType;
 
-      `<div id= "divcon">
-      <img id= "imgcon" src="${print.img}" >
-      <h1> ${print.name}</h1>
-      <h4> ${print.num} </h4>
-      </div>
-      `;
-      });
-  }
-  return "filterPokemon";
-};
+
+
 
 const order = () => {
   return "order";
@@ -28,7 +21,7 @@ const statistics = () => {
 };
 
 window.dataPokemon = {
-  filterPokemon,
+  filterType,
   order,
 };
 
