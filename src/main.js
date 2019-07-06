@@ -1,8 +1,5 @@
 // boton para mostrar todos los pokemons
 const showAll = document.getElementById('showAll');
-// variables para filtrado ascendente y descendente
-let orderNameAsc = document.getElementById ('orderNameAsc');
-let orderNameDesc = document.getElementById ('orderNameDesc');
 // constantes para busqueda por nombre
 const txtCont = document.getElementById('txtCont');
 const txtSearch = document.getElementById('txtSearch');
@@ -15,10 +12,16 @@ const estadistica = document.getElementById('stad'); // parrafo para mostar esta
 const data= POKEMON.pokemon;
 // Obtenemos todos los botones de filtrado
 const inputFilter = document.querySelectorAll('input.myButtons');
-console.log(inputFilter);
+//botones de orden ascendente y descendente
+const inputOrder = document.querySelectorAll('input.myOrderButtons');
 
+//***********ORDEN ASCENDENTE Y DESCENDENTE***********************
+inputOrder.forEach(element=>{
+  element.addEventListener("click",()=>{
 
-
+    let sort = window.sortData(data, element.getAttribute("name"));
+  });
+});
 //******FILTRADO UNIVERSAL QUE OBTIENE MI QUERYSELECTOR PARA DEFINIR MI FILTRADO POR TIPO******
 //Definimos un forEach para cada uno de mis """NodeList""
 inputFilter.forEach(element =>{
@@ -31,15 +34,13 @@ inputFilter.forEach(element =>{
     contenedor.innerHTML= "";
     estadistica.innerHTML= "";
 //obtenemos la longitud de nuestro filtrado para sacar estadísticas
-    let stadic = pokeFilter.length;
-    let static2 =  (151/100)* stadic + "% of pokemon are of this type";
-// Se imprime en este div marcado en html
-    estadistica.innerHTML +=
 
-    `<div id = "stadistic">
-    <h5> ${static2}</h5>
-    </div> `
-    ;
+// Apartado para poner estadisticas
+    let pokemontype = window.stadistics(pokeFilter);
+    let porcent = (151/100) * pokemontype;
+
+    estadistica.innerHTML += porcent + "% of pokemon are of this tipe"
+
 //Definimos que para c/u de nuestros elementos filtrados se va a imprimir un div para almacenar la data filtrada
 pokeFilter.forEach(pokeFilter =>{
 
@@ -66,32 +67,13 @@ pokeFilter.forEach(pokeFilter =>{
 
 //***************FIN DE FILTRADO UNIVERSAL******************************
 
-//filtrado ascendente y descendente
-orderNameDesc.addEventListener("click", () =>{
-
-  let orderByNameDesc = data.sort(function (a, b){
-      return ((a.name < b.name) ? 1 : ((a.name > b.name) ? -1 : 0));
-  });
-  console.log(data);
-});
-
-orderNameAsc.addEventListener("click", () =>{
-
-  const data= POKEMON.pokemon;
-  let orderByNameAsc = data.sort(function (a, b){
-      return ((a.name < b.name) ? -1 : ((a.name > b.name) ? 1 : 0));
-  });
-  console.log(data);
-});
-
-
 //Filtrado por busqueda
 txtSearch.addEventListener("click",() => {
   estadistica.innerHTML = "";
-contenedor.innerHTML= "";
-let valor = txtCont.value;
-let min = valor.replace(/\b\w/g, l => l.toUpperCase());
-let dataPoke = data.find(pok => {
+  contenedor.innerHTML= "";
+  let valor = txtCont.value;
+  let min = valor.replace(/\b\w/g, l => l.toUpperCase());
+  let dataPoke = data.find(pok => {
   return pok.name.includes(min);
 })
   contenedor.innerHTML +=
@@ -134,5 +116,5 @@ contenedor.innerHTML +=
   </div>
 </div>`
 
-} );
+  });
 });
