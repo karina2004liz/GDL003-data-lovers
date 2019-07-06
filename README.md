@@ -1,6 +1,5 @@
 <center>
 <h1> **Data Lovers** </h1>
-
 <h2> **Welcome to the Pokemon World!!!** </h2>
 </center>
 
