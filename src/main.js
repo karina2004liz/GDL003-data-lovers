@@ -44,11 +44,11 @@ inputFilter.forEach(element =>{
 //Definimos que para c/u de nuestros elementos filtrados se va a imprimir un div para almacenar la data filtrada
 pokeFilter.forEach(pokeFilter =>{
 
-  contenedor.innerHTML+= `<div class="flip-card">
+ contenedor.innerHTML+= `<div class="flip-card"><a href="#divconind"></a>
     <div class="flip-card-inner">
-      <div class="flip-card-front">
+      <div id="rotateImg"  class="flip-card-front">
         <img src=${pokeFilter.img} alt="Avatar" style="width:200px;height:200px;">
-        <h1>${pokeFilter.name}</h1>
+        <h1> ${pokeFilter.name}</h1>
 
       </div>
       <div class="flip-card-back">
@@ -62,6 +62,7 @@ pokeFilter.forEach(pokeFilter =>{
   </div>`
 
     });
+
   });
 });
 
@@ -74,7 +75,7 @@ txtSearch.addEventListener("click",() => {
   let valor = txtCont.value;
   let min = valor.replace(/\b\w/g, l => l.toUpperCase());
   let dataPoke = data.find(pok => {
-  return pok.name.includes(min);
+  return pok.name === min;
 })
   contenedor.innerHTML +=
   `<div id= "divconind">
