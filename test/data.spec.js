@@ -4,7 +4,7 @@ require('../src/data.js');
 
 describe('filterType', () => {
   it('is a function', () => {
-    expect(typeof example.filter).toBe("function");
+    expect(typeof example.filterType).toBe("function");
   });
   it('returns `filterType`', () => {
     expect(example.filter()).toBe("filterType");
@@ -13,7 +13,7 @@ describe('filterType', () => {
 
 describe('sortData', () => {
   it('is a function', () => {
-    expect(typeof example.order).toBe("function");
+    expect(typeof example.sortData).toBe("function");
   });
   it('returns `sortData`', () => {
     expect(example.order()).toBe("sortData");

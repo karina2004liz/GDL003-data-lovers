@@ -44,18 +44,18 @@ inputFilter.forEach(element =>{
 //Definimos que para c/u de nuestros elementos filtrados se va a imprimir un div para almacenar la data filtrada
 pokeFilter.forEach(pokeFilter =>{
 
- contenedor.innerHTML+= `<div class="flip-card"><a href="#divconind"></a>
-    <div class="flip-card-inner">
-      <div id="rotateImg"  class="flip-card-front">
-        <img src=${pokeFilter.img} alt="Avatar" style="width:200px;height:200px;">
-        <h1> ${pokeFilter.name}</h1>
-
-      </div>
-      <div class="flip-card-back">
-        <h6>Id: ${pokeFilter.num} </h6>
-        <h6>Type: ${pokeFilter.type}</h6>
-        <h6>Height: ${pokeFilter.height} </h6>
-        <h6>Weignt: ${pokeFilter.weight}</h6>
+ contenedor.innerHTML+=
+`<div class="flip-card"><a href="#divconind"></a>
+  <div class="flip-card-inner">
+    <div id="rotateImg"  class="flip-card-front">
+      <img src=${pokeFilter.img} alt="Avatar" style="width:200px;height:200px;">
+      <h1> ${pokeFilter.name}</h1>
+</div>
+  <div class="flip-card-back">
+    <h6>Id: ${pokeFilter.num} </h6>
+    <h6>Type: ${pokeFilter.type}</h6>
+    <h6>Height: ${pokeFilter.height} </h6>
+    <h6>Weignt: ${pokeFilter.weight}</h6>
         <h7> Weaknesses: ${pokeFilter.weaknesses} </h7>
       </div>
     </div>

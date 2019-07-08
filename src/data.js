@@ -4,7 +4,7 @@ const filterType = (data,type) => {
   const pokeType = data.filter(element => element.type.includes(type));
 
 return pokeType;
-}
+};
 
 window.filterType = filterType; //Igualo window.filterType a mi función filterType
 
@@ -13,7 +13,7 @@ window.filterType = filterType; //Igualo window.filterType a mi función filterT
 //recibe 2 datos, mi Data y el valor del input "AZ" o "ZA"
 const sortData = (data, condicion) => {
 
-   let arr = [];
+
    if(condicion == "AZ"){
 
      arr = data.sort((a, b) => a.name.localeCompare(b.name));
@@ -23,7 +23,7 @@ const sortData = (data, condicion) => {
    }
 
   return "arr";
-}
+};
 
 window.sortData =sortData;
 
@@ -32,7 +32,7 @@ window.sortData =sortData;
 const stadistics = (data) => {
 
   return data.length ;
-}
+};
 
 
 window.stadistics = stadistics;
