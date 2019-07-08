@@ -5,7 +5,7 @@ const txtCont = document.getElementById('txtCont');
 const txtSearch = document.getElementById('txtSearch');
 
 const contenedor = document.getElementById('container-result'); //Div que almacena mis filtrados
-const showOne = document.getElementById('imgcon'); // div para mostrar individuales
+//const showOne = document.getElementById('imgcon'); // div para mostrar individuales
 const estadistica = document.getElementById('stad'); // parrafo para mostar estadísticas
 
 //Obtiene toda mi data pokemon
@@ -19,7 +19,7 @@ const inputOrder = document.querySelectorAll('input.myOrderButtons');
 inputOrder.forEach(element=>{
   element.addEventListener("click",()=>{
 
-    let sort = window.sortData(data, element.getAttribute("name"));
+    window.sortData(data, element.getAttribute("name"));
   });
 });
 //******FILTRADO UNIVERSAL QUE OBTIENE MI QUERYSELECTOR PARA DEFINIR MI FILTRADO POR TIPO******
@@ -39,7 +39,7 @@ inputFilter.forEach(element =>{
     let pokemontype = window.stadistics(pokeFilter);
     let porcent = (151/100) * pokemontype;
 
-    estadistica.innerHTML += porcent + "% of pokemon are of this tipe"
+    estadistica.innerHTML += porcent + "% of pokemon are of this tipe";
 
 //Definimos que para c/u de nuestros elementos filtrados se va a imprimir un div para almacenar la data filtrada
 pokeFilter.forEach(pokeFilter =>{

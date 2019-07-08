@@ -16,10 +16,10 @@ const sortData = (data, condicion) => {
 
    if(condicion == "AZ"){
 
-     arr = data.sort((a, b) => a.name.localeCompare(b.name));
+  let  arr = data.sort((a, b) => a.name.localeCompare(b.name));
    }
    else {
-      arr = data.sort((a, b) => a.name.localeCompare(b.name)).reverse();
+  let   arr = data.sort((a, b) => a.name.localeCompare(b.name)).reverse();
    }
 
   return "arr";
